@@ -1,4 +1,5 @@
 import React from 'react';
+import firstcomefirstserve from './assets/first-come-first-serve.png';
 
 const App = () => {
   return (
@@ -43,9 +44,10 @@ const App = () => {
         <h3 className="text-3xl font-bold mb-10 text-center">Projects</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-white p-6 rounded shadow hover:shadow-lg transition">
-            <h4 className="font-bold text-xl mb-2">Project One</h4>
+            <h4 className="font-bold text-xl mb-2">First-Come-First-Serve</h4>
             <p className="text-gray-700 mb-4">A responsive React app with Tailwind CSS and API integration.</p>
-            <a href="#" className="text-blue-600 hover:underline">View Project</a>
+            <img src={firstcomefirstserve} alt="" />
+            <a href="https://firstcomefirstserve.netlify.app/" className="text-blue-600 hover:underline">View Project</a>
           </div>
           <div className="bg-white p-6 rounded shadow hover:shadow-lg transition">
             <h4 className="font-bold text-xl mb-2">Project Two</h4>
