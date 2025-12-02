@@ -169,7 +169,7 @@ const App = () => {
 
       {/* Footer */}
       <footer className="text-center py-6 bg-white shadow-inner mt-10">
-        &copy; {new Date().getFullYear()} John Dela Cerna. All rights reserved.
+        &copy; {new Date().getFullYear()} Gave Dela Cerna. All rights reserved.
       </footer>
 
     </div>
