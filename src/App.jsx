@@ -138,7 +138,7 @@ const App = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-white p-6 rounded shadow hover:shadow-lg transition">
             <h4 className="font-bold text-xl mb-2">First-Come-First-Serve</h4>
-            <p className="text-gray-700 mb-4">A responsive React app with Tailwind CSS and API integration.</p>
+            <p className="text-gray-700 mb-4">FCFS (First-Come, First-Served) is a CPU scheduling algorithm where the first process to arrive is executed first.</p>
             <img src={firstcomefirstserve} alt="" />
             <a href="https://firstcomefirstserve.netlify.app/" className="text-blue-600 hover:underline">View Project</a>
           </div>
