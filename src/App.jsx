@@ -35,30 +35,36 @@ const App = () => {
 
   
 
-    {/* Left Side Text */}
-      <section id= "about"className="py-20 px-6 max-w-4xl mx-auto">
-  <div className="flex items-center gap-8">
-    
-    <div className="flex-1">
+<section id="about" className="py-20 px-6 max-w-4xl mx-auto">
+  <div className="flex flex-col md:flex-row items-center gap-8">
+
+    {/* Text Section */}
+    <div className="flex-1 text-center md:text-left">
       <h3 className="text-3xl font-bold mb-4">About Me</h3>
       <p className="text-gray-700">
-       I am BSIT irregular student in Cordova Public Collage, I'm a Lazy person and only work under pressure. I have a passion for creating beautiful and functional web applications. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building dynamic user interfaces using React. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
-
+        I am BSIT irregular student in Cordova Public Collage, I'm a Lazy person and only work 
+        under pressure. I have a passion for creating beautiful and functional web applications. 
+        With a strong foundation in HTML, CSS, and JavaScript, I specialize in building dynamic 
+        user interfaces using React. When I'm not coding, I enjoy exploring new technologies and 
+        contributing to open-source projects.
       </p>
     </div>
 
-    {/* Right Side Image */}
-<img 
-  src={mypicture}
-  alt="mypicture"
-  className="w-70 h-70 object-cover rounded-xl ml-6
-             transition transform hover:-translate-y-2
-             shadow-[0_10px_30px_rgba(0,0,0,0.5)]
-             hover:shadow-[0_25px_50px_rgba(0,0,0,0.75)]"
-/>
-
+    {/* Image Section */}
+    <img 
+      src={mypicture}
+      alt="mypicture"
+      className="
+        w-48 h-48 md:w-70 md:h-70 
+        object-cover rounded-xl
+        shadow-[0_10px_30px_rgba(0,0,0,0.5)]
+        hover:shadow-[0_25px_50px_rgba(0,0,0,0.75)]
+        transition transform hover:-translate-y-2
+      "
+    />
   </div>
 </section>
+
 
 {/* Skills Section */}
 <section id="skills" className="py-20 px-6 bg-white max-w-4xl mx-auto">
