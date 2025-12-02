@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import firstcomefirstserve from './assets/first-come-first-serve.png';
 import mypicture from './assets/mypicture.jpg';
 
 const App = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-gray-100 font-sans text-gray-800">
 
