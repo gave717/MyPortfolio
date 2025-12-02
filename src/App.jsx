@@ -7,18 +7,44 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 font-sans text-gray-800">
 
-      {/* Header */}
-      <header className="bg-white shadow-md p-6 flex justify-between items-center sticky top-0 z-50">
-        <h1 className="text-2xl font-bold">Gave Dela Cerna</h1>
-        <nav>
-          <ul className="flex gap-6">
-            <li><a href="#about" className="hover:text-blue-600">About</a></li>
-             <li><a href="#skills" className="hover:text-blue-600">Skills</a></li>
-            <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
-            <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+   {/* Header */}
+<header className="bg-white shadow-md p-6 flex justify-between items-center sticky top-0 z-50">
+  
+  {/* Logo */}
+  <h1 className="text-2xl font-bold">Gave Dela Cerna</h1>
+
+  {/* Desktop Menu */}
+  <nav className="hidden md:block">
+    <ul className="flex gap-6">
+      <li><a href="#about" className="hover:text-blue-600">About</a></li>
+      <li><a href="#skills" className="hover:text-blue-600">Skills</a></li>
+      <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
+      <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+
+  {/* Mobile Hamburger Button */}
+  <button 
+    className="md:hidden text-3xl"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    ☰
+  </button>
+
+  {/* Mobile Menu Dropdown */}
+  {menuOpen && (
+    <nav className="absolute top-20 right-6 bg-white shadow-lg rounded-lg p-4 md:hidden">
+      <ul className="flex flex-col gap-4 text-right">
+        <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+        <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+        <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+      </ul>
+    </nav>
+  )}
+
+</header>
+
 
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-32 bg-gradient-to-r from-blue-300 to-purple-300">
