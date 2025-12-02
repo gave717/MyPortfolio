@@ -48,11 +48,14 @@ const App = () => {
     </div>
 
     {/* Right Side Image */}
-    <img 
-      src={mypicture}
-      alt="mypicture"
-      className="w-70 h-70 object-cover rounded-lg shadow ml-6"
-    />
+<img 
+  src={mypicture}
+  alt="mypicture"
+  className="w-70 h-70 object-cover rounded-xl ml-6
+             transition transform hover:-translate-y-2
+             shadow-[0_10px_30px_rgba(0,0,0,0.5)]
+             hover:shadow-[0_25px_50px_rgba(0,0,0,0.75)]"
+/>
 
   </div>
 </section>
