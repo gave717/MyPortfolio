@@ -1,5 +1,6 @@
 import React from 'react';
 import firstcomefirstserve from './assets/first-come-first-serve.png';
+import mypicture from './assets/mypicture.jpg';
 
 const App = () => {
   return (
@@ -7,10 +8,11 @@ const App = () => {
 
       {/* Header */}
       <header className="bg-white shadow-md p-6 flex justify-between items-center sticky top-0 z-50">
-        <h1 className="text-2xl font-bold">John Dela Cerna</h1>
+        <h1 className="text-2xl font-bold">Gave Dela Cerna</h1>
         <nav>
           <ul className="flex gap-6">
             <li><a href="#about" className="hover:text-blue-600">About</a></li>
+             <li><a href="#skills" className="hover:text-blue-600">Skills</a></li>
             <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
             <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
           </ul>
@@ -31,13 +33,68 @@ const App = () => {
         </a>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 max-w-4xl mx-auto">
-        <h3 className="text-3xl font-bold mb-4">About Me</h3>
-        <p className="text-gray-700">
-          I am BSIT irregular student in Cordova Public Collage, I'm a Lazy person and only work under pressure. I have a passion for creating beautiful and functional web applications. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building dynamic user interfaces using React. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
-        </p>
-      </section>
+  
+
+    {/* Left Side Text */}
+      <section id= "about"className="py-20 px-6 max-w-4xl mx-auto">
+  <div className="flex items-center gap-8">
+    
+    <div className="flex-1">
+      <h3 className="text-3xl font-bold mb-4">About Me</h3>
+      <p className="text-gray-700">
+       I am BSIT irregular student in Cordova Public Collage, I'm a Lazy person and only work under pressure. I have a passion for creating beautiful and functional web applications. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building dynamic user interfaces using React. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
+
+      </p>
+    </div>
+
+    {/* Right Side Image */}
+    <img 
+      src={mypicture}
+      alt="mypicture"
+      className="w-70 h-70 object-cover rounded-lg shadow ml-6"
+    />
+
+  </div>
+</section>
+
+{/* Skills Section */}
+<section id="skills" className="py-20 px-6 bg-white max-w-4xl mx-auto">
+  <h3 className="text-3xl font-bold mb-10 text-center">Skills</h3>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+    <div className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+      <h4 className="font-bold text-lg">HTML</h4>
+      <p className="text-gray-600 text-sm">Experienced</p>
+    </div>
+
+    <div className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+      <h4 className="font-bold text-lg">CSS / Tailwind</h4>
+      <p className="text-gray-600 text-sm">Proficient</p>
+    </div>
+
+    <div className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+      <h4 className="font-bold text-lg">JavaScript</h4>
+      <p className="text-gray-600 text-sm">Intermediate</p>
+    </div>
+
+    <div className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+      <h4 className="font-bold text-lg">React</h4>
+      <p className="text-gray-600 text-sm">Intermediate</p>
+    </div>
+
+    <div className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+      <h4 className="font-bold text-lg">Git / GitHub</h4>
+      <p className="text-gray-600 text-sm">Intermediate</p>
+    </div>
+
+    <div className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+      <h4 className="font-bold text-lg">UI/UX Basics</h4>
+      <p className="text-gray-600 text-sm">Beginner</p>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 bg-gray-50">
